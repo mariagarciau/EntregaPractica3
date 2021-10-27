@@ -25,10 +25,17 @@ year = int(input())
 print(is_leap(year))
 """
 def is_leap(year):
-    leap = False
-    if year%4 == 0 or year%400 == 0 and not year%100==0:
+    if year%4 == 0 and year%100!=0:
+        leap = True
         print("El año es bisiesto")
-    else:
+    elif year%4==0 and year%100==0 and year%400!=0:
+        leap = False
+        print("El año no es bisiesto")
+    elif year%4==0 and year%100==0 and year%400==0:
+        leap = True
+        print("El año es bisiesto")
+    elif year%4!=0:
+        leap = False
         print("El año no es bisiesto")
     return leap
 year = int(input())
