@@ -3,10 +3,12 @@
 N1 : float
 N2 : float
 N3 : float
-print("Introduzca la primera nota")
-input(N1)
-print("Introduzca la segunda nota")
-input(N2)
-print("Introduzca la tercera nota")
-input(N3)
-print(promedio= (N1+N2+N3)/3)
+N1 = input("Introduzca la primera nota: ")
+N2 = input("Introduzca la segunda nota: ")
+N3 = input("Introduzca la tercera nota: ")
+N1 = float(N1)
+N2 = float(N2)
+N3 = float(N3)
+promedio : float
+promedio= (N1+N2+N3)/3
+print(promedio)
