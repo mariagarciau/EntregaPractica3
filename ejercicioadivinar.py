@@ -37,4 +37,5 @@ while numeroIntroducido2 != numeroRandom2:
     elif numeroRandom2 > numeroIntroducido2:
         print("El número que debe adivinar es mayor")
         numeroIntroducido2 = int(input("Introduzca un número entre 1 y 300: "))
-print("Has acertado el número")
+if intentos<9:
+    print("Has acertado el número")
